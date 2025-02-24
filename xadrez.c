@@ -1,32 +1,43 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    const int TORRE_MOVIMENTOS = 5;
+    const int BISPO_MOVIMENTOS = 5;
+    const int RAINHA_MOVIMENTOS = 8;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Mostra os movimentos da torre
+    printf("Movimentos da Torre: \n\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    for (int i = 0; i < TORRE_MOVIMENTOS; i++)
+    {
+        printf("Direita\n");
+    }
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    // Mostra os movimentos do bispo
+    printf("\nMovimentos do Bispo: \n\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    int i = 0;
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    while (i < BISPO_MOVIMENTOS)
+    {
+        printf("Cima, Direita\n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+        i++;
+    }
+
+    i = 0; // Muda o valor da variável para 0, para que possa ser utilizada na iteração da rainha
+
+    // Mostra os movimentos da rainha
+    printf("\nMovimentos da Rainha: \n\n");
+
+    do
+    {
+        printf("Esquerda\n");
+
+        i++;
+    }
+    while (i < RAINHA_MOVIMENTOS);
 
     return 0;
 }
