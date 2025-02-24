@@ -28,7 +28,7 @@ int main() {
         i++;
     }
 
-    i = 0; // Muda o valor da variável para 0, para que possa ser utilizada na iteração da rainha
+    i = 0; // Muda o valor da variável para 0, para que possa ser utilizada em outra iteração
 
     // Mostra os movimentos da rainha
     printf("\nMovimentos da Rainha: \n\n");
